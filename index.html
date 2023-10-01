@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #280247;
+        }
+        .container, nav a, a{
+            color: #fff;
+        }
+        header {
+            background-color: #280247;
+            padding: 12px;
+        }
+        .navbar-toggler span{
+            background-color: #fff;
+            border-color: #fff;
+        }
+        .navbar-toggler {
+            border: solid 2px #fff;
+        }
+        nav a, a {
+            text-decoration: none;
+            margin-left: 1.5em;
+        }
+        nav a:hover {
+            color: #c4fafaee;
+            font-weight: normal;
+        }
+        img {
+            width: 100%;
+            height: 480px;
+        }
+        .carousel-inner a:hover {
+            font-weight: bold;
+        }
+        section {
+            padding-top: 40px;
+        }
+        article img {
+            width: 100%;
+            height: 340px;
+        }
+        .contact img {
+            width: 100%;
+            height: 100%;
+        }
+        form button {
+            margin-top: 16px;
+        }
+        .bar-footer {
+            border-top: solid 3px #fff;
+        }
+        .footer {
+            padding: 24px;
+            background-color: #280247;
+            margin-top: 16px;
+            color: #fff;
+        }
+        .footer p {
+            top: 50%;
+            padding-top: 8px;
+        }
+        .footer img {
+            width: 50px;
+            height: 50px;
+        }
+        .footer a {
+            margin-left: 12px;
+        }
+        .footer h5 {
+            margin-top: 16px;
+        }
+        .final-bar {
+            margin-top: 16px;
+            padding: 4px;
+            background-color: #1b032e;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header id="home">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Olá Bootstrap!</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-items">
+                            <a href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-items">
+                            <a href="#sobre">Sobre</a>
+                        </li>
+                            <li class="nav-items">
+                            <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank">Documentação</a>
+                        </li>
+                            <li class="nav-items">
+                            <a href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div id="carousel-exemplo" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="2000" class="carousel-item active">
+                    <img src="./img/boostrap_home.png" alt="">  
+                </div>    
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="./img/bootstrap_cards.png" alt="">
+                    <div class="carousel-caption">
+                        <a href="https://getbootstrap.com/docs/5.3/components/card/">
+                            <p>- Conheça os cards bootstrap -</p>
+                        </a>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="./img/bootstrap_carousel.png" alt="">
+                    <div class="carousel-caption">
+                        <a href="https://getbootstrap.com/docs/5.3/components/carousel/">
+                            <p>- Saiba mais sobre corousel -</p>
+                        </a>
+                    </div>  
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="./img/bootstrap_dropdown.png" alt="">
+                    <div class="carousel-caption">
+                        <a href="https://getbootstrap.com/docs/5.3/components/dropdowns/">
+                            <p>- Aprenda sobre menu dropdown -</p>
+                        </a>
+                    </div>  
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="./img/bootstrap_modal.png" alt="">
+                    <div class="carousel-caption">
+                        <a href="https://getbootstrap.com/docs/5.3/components/modal/">
+                            <p>- Entenda sobre modal -</p>
+                        </a>
+                    </div>  
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="./img/bootstrap_navbar.png" alt="">
+                    <div class="carousel-caption">
+                        <a href="https://getbootstrap.com/docs/5.3/components/navbar/">
+                            <p>- Fique por dentro das navbar -</p>
+                        </a>
+                    </div>  
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="./img/bootstrap_abas.png" alt="">
+                    <div class="carousel-caption">
+                        <a href="https://getbootstrap.com/docs/5.3/components/navs-tabs/">
+                            <p>- Crie abas bootstrap -</p>
+                        </a>
+                    </div>  
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="./img/bootstrap_toasts.png" alt="">
+                    <div class="carousel-caption">
+                        <a href="https://getbootstrap.com/docs/5.3/components/toasts/">
+                            <p>- Saiba o que são toasts -</p>
+                        </a>
+                    </div>  
+                </div>        
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="5"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="6"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="7"></button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <section id="inicio">
+            <div class="row">
+                <div class="col-sm12 col-md-6 col-lg-4">
+                    <article class="card">
+                        <img src="./img/bootstrap_logo.png">
+                        <div class="card-body">
+                            <h4 class="card-title">A história do bootstrap</h4>
+                            <p class="card-text">
+                                O bootstrap foi criado em meados de 2010. Antes de ser uma estrutura de código aberto, o bootstrap era conhecido como Twitter Blueprint...
+                            </p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#artigo-1">
+                                Leia mais
+                            </button>
+                            <div class="modal" id="artigo-1" data-bs-backdrop="static">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>A história do Bootstrap</h5>
+                                            <button data-bs-dismiss="modal" type="button" class="btn-close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                Originalmente criado por um designer e um desenvolvedor do Twitter,o Bootstrap se tornou um dos mais populares frameworks front-end e projetos de código aberto no mundo.
+                                            </p>
+                                            <p>
+                                                O Bootstrap foi criado em meados de 2010, por Mark Otto e Jacó Thornton.<br>Antes de ser uma estrutura de código aberto, o Bootstrap era conhecido como Twitter Blueprint. Após alguns meses de desenvolvimento, o Twitter realizou sua primeira Hack Week e o projeto explodiu à medida que
+                                                os desenvolvedores de todos os níveis evoluíram sem nenhuma orientação externa. Ele serviu como guia de estilo para o desenvolvimento de ferramentas internas na empresa, por mais de um ano até ter seu lançamento público, e continua a fazê-lo até hoje.
+                                            </p>
+                                            <p>
+                                                Lançado originalmente em 19 de agosto de 2011, já teve mais de 20 atualizações, com cada atualização tornando o framework melhor e mais poderoso.
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                                                <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank">Conheça a documentação</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <article class="card">
+                        <img src="./img/como_funciona.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title">O que é Bootstrap e como ele funciona?</h4>
+                            <p class="card-text">
+                                Basicamente o Bootstrap é um framework CSS para ser utilizado no front-end de aplicações web.
+                            </p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#artigo-2">
+                                Leia mais
+                            </button>
+                            <div class="modal" id="artigo-2" data-bs-backdrop="static">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>O que é o Bootstrap e como ele funciona?</h5>
+                                            <button data-bs-dismiss="modal" type="button" class="btn-close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                O Bootsttrap utiliza JavaScript e CSS para estilizar as páginas e adicionar funcionalidades que vão além de apenas proporcionar um visual bonito ao site, isso porque ele permite implementar menus de navegação, controle de paginação, formulários, janelas modais e muito mais.
+                                            </p>
+                                            <p>
+                                                A principal característica do Bootstrap é a responsividade do site, ou seja, seu objetivo é permitir que os elementos da página sejam readaptados para o acesso em diferentes dispositivos, como notebooks, tablets, smartphones e, até mesmo para monitores maiores que os tradicionais.
+                                            </p>
+                                            <p>
+                                                Isso significa que ele se adapta bem a diferentes tipos de aplicações. Não é à toa que o Bootstrap é o segundo colocado entre as bibliotecas JavaScript mais utilizadas no mercado, conforme o comparativo no site W3Techs.
+                                            </p>
+                                            <p>
+                                                Em Start Bootstrap existe muitos modelos de sites com o uso do  Bootstrap.
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                                                <a href="https://startbootstrap.com/themes/" target="_blank">Ir para o site</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-sm12 col-md-6 col-lg-4">
+                    <article class="card">
+                        <img src="./img/por_que_usar.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title">Por que devo usar Bootstrap?</h4>
+                            <p class="card-text">
+                                Será que existe vantagem em usar o Bootstrap?<br>
+                                Há inúmeras vantagens em usar o Bootstrap. Iremos apontar algumas.
+                            </p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exemplo-modal">
+                                Leia mais
+                            </button>
+                            <div class="modal" id="exemplo-modal" data-bs-backdrop="static">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>Por que devo usar o Bootstrap?</h5>
+                                            <button data-bs-dismiss="modal" type="button" class="btn-close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                <ul>
+                                                    <li>Reduz o tempo de desenvolvimento;</li>
+                                                    <li>É fácil de utilizar e aprender;</li>
+                                                    <li>É responsivo;</li>
+                                                    <li>Permite customização;</li>
+                                                    <li>Componetes prontos para uso;</li>
+                                                    <li>Suporte à vários navegadores;</li>
+                                                    <li>Documentação abrangente;</li>
+                                                    <li>Fácil personalização das páginas;</li>
+                                                    <li>Compatibilidade com dispositivos móveis;</li>
+                                                    <li>Existem comunidades ativas de desenvolvedores;</li>
+                                                    <li>Entre muitas outras...</li>
+                                                </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+        </section>
+        <section id="sobre">
+            <div class="row">
+                <div class="col-sm-12 col-lg-6">
+                    <img src="./img/secao_sobre.png" alt="">
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                    <h4>Lorem</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam tempore ratione ipsam ex corrupti quas minima, ad molestiae delectus temporibus cum ut veritatis commodi sunt facere nam iure! At, aliquid?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quos sunt ut nulla asperiores delectus nam ab laboriosam est eos, eum earum odio minus. Laudantium explicabo a possimus minima ducimus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, sed voluptas dolore sit iste quisquam maiores nulla accusamus error? Reprehenderit beatae maxime accusamus perspiciatis sunt voluptatibus, a harum repellat illo?</p>
+                </div>
+            </div>
+        </section>
+        <section id="contato">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 contact">
+                        <img src="./img/bootstrap-social.png" alt="">
+                    </div>
+                    <div class="col">
+                        <h2>Contate-nos</h2>
+                        <form>
+                            <label for="nome" class="form-label">Seu nome:</label>
+                            <input type="text" class="form-control" id="nome">
+                            <label for="email" class="form-label">Seu e-mail:</label>
+                            <input type="email" class="form-control" id="email">
+                            <label for="telefone" class="form-label">Seu telefone:</label>
+                            <input type="tel" class="form-control" id="telefone">
+                            <button class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="bar-footer"></div>
+            <h5 class="d-flex justify-content-center">Redes Sociais:</h5>
+            <div class="row">
+                <div class="col-12  d-flex justify-content-center">
+                    <a href="#">
+                        <img src="./img/icon_facebook.png" alt="facebook">
+                    </a>
+                    <a href="#">
+                        <img src="./img/icon_instagram.png" alt="Instagram">
+                    </a>
+                    <a href="#">
+                        <img src="./img/icon_twitter.png" alt="Youtube">
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <a href="#home">Home</a><a href="#">Noticias</a><a href="#">Suporte</a>
+            </div>
+            <div class="d-flex justify-content-center final-bar">
+                &copy; Alex Faustino 2023 - Todos os direitor reservados
+            </div>
+        </div>
+    </footer>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
